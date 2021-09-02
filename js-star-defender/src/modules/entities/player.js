@@ -38,6 +38,8 @@ export class Player {
             if (this.shootTimer > this.shootReset) this.shoot(), this.shootTimer = 0;
         }
 
-        this.pos.y += this.dir.y * this.speed;
+        if (!(this.pos.y < 0 && this.dir.y === -1 || this.pos.y > canvas.height - this.size.h && this.dir.y === 1)) {
+            this.pos.y += this.dir.y * this.speed;
+        }
     }
 }
