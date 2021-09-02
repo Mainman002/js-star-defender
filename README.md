@@ -3,6 +3,10 @@ A space invaders clone made in javascript for learning purposes.
 
 ![image](https://user-images.githubusercontent.com/11281480/131918342-84dfb3e2-0c02-4bd2-a245-83833f962280.png)
 
+### Keyboard Shortcuts
+* W,A,S,D / Left, Right, Up, Down Arrow Keys to move
+* Spacebar to shoot lasers
+
 ### How to Play / Install
 * install npm ( https://docs.npmjs.com/downloading-and-installing-node-js-and-npm )
 * clone js-star-defender-main files, then extract, and navigate to that folder
