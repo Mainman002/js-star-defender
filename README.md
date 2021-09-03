@@ -1,7 +1,7 @@
 # js-star-defender
 A space invaders clone made in javascript for learning purposes.
 
-![image](https://user-images.githubusercontent.com/11281480/131918342-84dfb3e2-0c02-4bd2-a245-83833f962280.png)
+![image](https://user-images.githubusercontent.com/11281480/132040918-529672e2-7351-4d0d-8f68-5e1f6cbb118b.png)
 
 ### Keyboard Shortcuts
 * W,A,S,D / Left, Right, Up, Down Arrow Keys to move
