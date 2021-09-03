@@ -8,8 +8,8 @@ export class Player {
         this.dir = {x:0 ,y:0};
         this.speed = 4;
         this.shooting = false;
-        this.shootTimer = 0;
-        this.shootReset = 16;
+        this.shootTimer = 30;
+        this.shootReset = 35;
         // this.image = playerImage;
         // this.image.src = playerImage.src;
     }
@@ -36,6 +36,11 @@ export class Player {
         if (this.shooting){
             this.shootTimer++;
             if (this.shootTimer > this.shootReset) this.shoot(), this.shootTimer = 0;
+        } else {
+            if (this.shootTimer < this.shootReset) {
+                this.shootTimer++;
+                // this.shootTimer = this.shootReset;
+            }
         }
 
         if (!(this.pos.y < 0 && this.dir.y === -1 || this.pos.y > canvas.height - this.size.h && this.dir.y === 1)) {
@@ -43,3 +48,4 @@ export class Player {
         }
     }
 }
+

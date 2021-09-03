@@ -41,6 +41,9 @@ window.addEventListener('resize', function(){
 
 // Extra resize window function
 function resizeWindow(){
+
+    // canvas.style.left = `180px`;
+
     // gets the window inner size
     CANVAS_HEIGHT = window.innerHeight;
     CANVAS_WIDTH = window.innerWidth;
@@ -48,12 +51,12 @@ function resizeWindow(){
     // scales canvas based on a certain ratio
     // 16 / 9 = Widescreen
     // 1 / 1 = Box
-    let ratio = 16 / 9;
-    if (CANVAS_HEIGHT < CANVAS_WIDTH / ratio){
-        CANVAS_WIDTH = CANVAS_HEIGHT * ratio;
-    } else {
-        CANVAS_HEIGHT = CANVAS_WIDTH / ratio;
-    }
+    // let ratio = 16 / 9;
+    // if (CANVAS_HEIGHT < CANVAS_WIDTH / ratio){
+    //     CANVAS_WIDTH = CANVAS_HEIGHT * ratio;
+    // } else {
+    //     CANVAS_HEIGHT = CANVAS_WIDTH / ratio;
+    // }
 
     // sets the canvas actual size
     canvas.height = HEIGHT;
